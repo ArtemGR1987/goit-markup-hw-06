@@ -54,6 +54,11 @@ p {
   color: inherit;
 }
 
+
+
+textarea {
+  resize: none;
+}
 /*цвет основного текста #212121/
 
 /*вторичный цвет текста #757575*/
@@ -321,9 +326,72 @@ p {
 
 /* Оформление модального окна */
 
+.form-header {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  
+  color: var(--title-text-color);
+
+  margin-bottom: 12px;
+}
 
 
+.form-field {
+  display: flex;
+  flex-direction: column;
 
+}
+
+.box-size {
+  height: 120px;
+}
+
+.form-input {
+  margin: 0;
+  margin-bottom: 10px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+
+}
+
+.form-label {
+  margin-bottom: 4px;
+}
+
+
+.form-field textarea::placeholder {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+    
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.last {
+  margin-bottom: 10px;
+}
+
+.form {
+  width: 448px;
+ 
+  outline: 1px solid tomato;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  padding-bottom: 0px;
+  
+}
 
 
 

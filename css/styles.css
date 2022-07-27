@@ -326,6 +326,19 @@ textarea {
 
 /* Оформление модального окна */
 
+.form {
+  width: 448px;
+
+  outline: 1px solid tomato;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  padding-bottom: 0px;
+
+}
+
+
 .form-header {
   font-weight: 700;
   font-size: 20px;
@@ -347,6 +360,22 @@ textarea {
 
 .box-size {
   height: 120px;
+}
+
+.chekbox-bottom {
+  margin-bottom: 30px;
+  
+  display: block;
+  align-items: center;
+  text-align: center;
+
+}
+
+.button-submit {
+  margin-bottom: 40px;
+  margin-left: 164px;
+  margin-right: 164px;
+
 }
 
 .form-input {
@@ -381,18 +410,9 @@ textarea {
   margin-bottom: 10px;
 }
 
-.form {
-  width: 448px;
- 
-  outline: 1px solid tomato;
-
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 40px;
-  padding-bottom: 0px;
-  
+.checkbox-link {
+  color: rgba(33, 150, 243, 1)
 }
-
 
 
 

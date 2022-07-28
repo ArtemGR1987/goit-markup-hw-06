@@ -347,10 +347,10 @@ textarea {
   position: absolute;
   top: 11px;
   left: 12px;
-  transform: translateY(50%);
+  transform: translateY(100%);
 }
 
-.form-input:focus ~ .form-icon {
+.form-field:focus-within > .form-icon {
   fill: var(--accent-color);
 }
 
@@ -377,7 +377,7 @@ textarea {
 
 .form-input:hover,
 .form-input:focus {
-  outline-color: var(--accent-color);
+  outline-color: #2196F3;
 }
 
 .box-size {
@@ -386,12 +386,14 @@ textarea {
   padding: 12px 16px;
 }
 
-.chekbox-bottom {
+.checkbox-bottom {
   margin-bottom: 30px;
   
   display: block;
   align-items: center;
   text-align: center;
+
+  position: relative;
 
 }
 
@@ -422,8 +424,9 @@ textarea {
 }
 
 .form-input {
-  margin-top: 10px;
-  margin-bottom: 20px;
+  padding-left: 42px;
+  margin: 0;
+  margin-bottom: 10px;
   padding-top: 11px;
   padding-bottom: 11px;
 
@@ -439,11 +442,6 @@ textarea {
 
 .form-label {
   margin-bottom: 4px;
-  
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translateY(-60%);
 }
 
 
@@ -468,10 +466,26 @@ textarea {
   color: var(--accent-color);
 }
 
-.chekbox-bottom input[type='checkbox'] {
 
-
+.checkbox {
+  appearance: none;
 }
+
+
+
+.vector {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: 8.38px;
+}
+
+
+
+
+
+
 
 
 /* Наши преимущества */

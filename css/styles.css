@@ -321,15 +321,19 @@ textarea {
 
   border: var(--main-white-color);
   background-color: var(--main-white-color);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.close:hover, 
+.close:focus {
+  fill: var(--accent-color);
+}
 
 /* Оформление модального окна */
 
 .form {
   width: 448px;
-
-  outline: 1px solid tomato;
 
   margin-left: auto;
   margin-right: auto;
@@ -338,6 +342,17 @@ textarea {
 
 }
 
+
+.form-icon {
+  position: absolute;
+  top: 11px;
+  left: 12px;
+  transform: translateY(50%);
+}
+
+.form-input:focus ~ .form-icon {
+  fill: var(--accent-color);
+}
 
 .form-header {
   font-weight: 700;
@@ -355,7 +370,14 @@ textarea {
 .form-field {
   display: flex;
   flex-direction: column;
+  position: relative;
 
+}
+
+
+.form-input:hover,
+.form-input:focus {
+  outline-color: var(--accent-color);
 }
 
 .box-size {
@@ -374,9 +396,10 @@ textarea {
 }
 
 .button-submit {
-  margin-bottom: 40px;
-  
-  
+
+  margin-left: 124px;
+
+  display: block;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -399,19 +422,28 @@ textarea {
 }
 
 .form-input {
-  margin: 0;
-  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
   padding-top: 11px;
   padding-bottom: 11px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
-
+  cursor: pointer;
+  
 }
+
+
+
 
 .form-label {
   margin-bottom: 4px;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-60%);
 }
 
 
@@ -424,6 +456,7 @@ textarea {
   letter-spacing: 0.01em;
     
   color: rgba(117, 117, 117, 0.5);
+  
 }
 
 .last {
@@ -431,7 +464,8 @@ textarea {
 }
 
 .checkbox-link {
-  color: rgba(33, 150, 243, 1)
+
+  color: var(--accent-color);
 }
 
 .chekbox-bottom input[type='checkbox'] {

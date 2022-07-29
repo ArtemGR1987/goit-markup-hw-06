@@ -480,7 +480,7 @@ textarea {
 
 .checkbox:checked + .vector {
   fill: var(--accent-color);
-  background-image: url(/images/check.svg);
+  background-image: url(../images/check.svg);
   background-size: contain;
   background-origin: border-box;
   border-color: var(--accent-color);
